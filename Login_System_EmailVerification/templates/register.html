@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Registration{% endblock %}
+{% block content %}
+<script>
+    var pass1=document.getElementByName('pass1');
+    var pass2=docume.getElementByName('pass2');
+    if(pass1!=pass2){
+        alert("Passowrds doesn't match");
+    }
+</script>
+<div class="div1">
+    <form action="" method="post">
+        <div class="form-group1">
+            <label for="firstname">First Name <sup>*</sup></label>
+            <input type="text" class="fg1" name="fname" placeholder="Enter Your First Name">
+        </div>
+        <div class="form-group1">
+            <label for="lastname">Last Name <sup>*</sup></label>
+            <input type="text" class="fg1" name="lname" placeholder="Enter Your Last Name">
+        </div>
+        <div class="form-group1">
+            <label for="email">Email  <sup>*</sup></label>
+            <input type="email" class="fg1" name="email" required>
+        </div>
+        <div class="form-group1">
+            <label for="password">Password<sup>*</sup></label>
+            <input type="password" class="fg1" name="pass1" required>
+        </div>
+        <div class="form-group1">
+            <label for="confirm-password">Confirm Password<sup>*</sup></label>
+            <input type="password" class="fg1" name="pass2" required>
+        </div>
+        <div class="form-group1">
+            <button type="submit">Register</button>
+        </div>
+        <div class="form-group2">
+            <sup>*</sup><h5>Remember Username and Password</h5>
+        </div>
+        <div class="form-group2">
+            <sup>*</sup><h5>You can login using username or Email</h5>
+        </div>
+        
+    </form>
+</div>
+{% endblock %}

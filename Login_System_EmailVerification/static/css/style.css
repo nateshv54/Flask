@@ -1,0 +1,79 @@
+body {
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+}
+
+.div1 {
+    border: 2px solid black;
+    padding: 20px; /* Adjusted padding for better spacing */
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+sup {
+    color: red;
+    font-size: 80%;
+}
+
+.form-group2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+.form-group3{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    grid-area: 1px;
+    flex: 1;
+}
+h5 {
+    margin: 0;
+    margin-left: 5px;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+}
