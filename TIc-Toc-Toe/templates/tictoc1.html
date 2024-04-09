@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Tic Tac  Toe with computer</h1>
+    <table>
+        {% for row in range(rows) %}
+        <tr>
+            {% for col in range(cols) %}
+            <td>
+                <form action="/move1" method="post">
+                    <button type="submit" name="row" value="{{ row }}">{{ board[row][col] }}</button>
+                    <input type="hidden" name="col" value="{{ col }}">
+                </form>
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+   <div class="turn1">
+    <p>It's {{ symbols[current_player] }} 's  turn </p>
+    <p><a href="/reset1">Reset Game</a></p>
+   </div>
+    <div class="msg1">
+        
+        {% if message and 'X' in message %}
+        <div class="win1">
+    
+            
+        </div>
+        {% endif %}
+
+         {% if message and 'O' in message  %}
+        <div class="lose1">
+            
+        </div>
+        {% endif %}
+
+        {% if message and 'draw' in message %}
+        <div class="draw">
+            
+            <p><a href="/reset1">Play Again!</a></p>
+        
+        </div>
+        {% endif %}
+
+    </div>
+    <div class="turn1">
+        <p><a href="/">Return to Home Page</a> </p>
+    </div>
+    
+</body>
+</html>
