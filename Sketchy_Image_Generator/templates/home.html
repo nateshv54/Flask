@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Bg Remover</title>
+    <link rel="stylesheet" href="{{url_for('static',filename="styles.css")}}">
+</head>
+<body>
+    <div class="divform">
+        <h1>Remove Background</h1>
+    
+    <form action="/sketch" class="form1" method="post" enctype="multipart/form-data">
+        <div class="form_group1">
+            <input type="file" name="file1" required>
+        </div>
+        <button type="submit" value="Upload">Generate Sketch</button>
+    </form>
+
+    {% if sketch_img_name %}
+    <div class="row1">
+        <div class="col1">
+            <h2>Orignal Image</h2>
+            <img src="../static/uploads/{{org_img_name}}" alt="Error Loading Image">
+        </div>
+        <div class="col1">
+            <h2>Sketch Image</h2>
+            <img src="../static/uploads/{{ sketch_img_name}}" alt="">
+            <a href="{{url_for('download',filename=sketch_img_name)}}">Download Sketch</a>
+        </div>
+    {% endif %}
+    </div>
+
+</div>
+
+
+    
+</body>
+</html>
