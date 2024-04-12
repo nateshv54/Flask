@@ -1,0 +1,4 @@
+flask
+#In this project I use NewsAPI.org free API(developer account's),
+#You can use any news provides you want, like  GNews,BigNewsSearch,Newsdata.io,NewsCatcher etc
+#NewsApI provides Live news based on Country Code.(refer location.py)

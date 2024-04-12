@@ -1,0 +1,65 @@
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form1 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff; /* White background */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #03121d; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #0d46e4; /* Darker blue on hover */
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.div1 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px;
+    background-color: #fff; /* White background */
+}
+
+.div2 {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid #5b5959; /* Light grey border */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Lighter grey background */
+    background-repeat: no-repeat;
+}
